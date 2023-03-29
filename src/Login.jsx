@@ -9,7 +9,7 @@ export const Login = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(email);
-    console.log(sdds);
+    // console.log(sdds);
     navigate("/dd");
   };
 

@@ -8,7 +8,7 @@ export const Register = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(email);
-    console.log(sdsdfds);
+    // console.log(sdsdfds);
   };
 
   return (
