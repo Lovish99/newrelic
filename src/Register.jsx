@@ -1,14 +1,16 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const Register = (props) => {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const [name, setName] = useState("");
-
+  const { navigate } = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(email);
     // console.log(sdsdfds);
+    navigate("/aaa");
   };
 
   return (
@@ -41,9 +43,7 @@ export const Register = (props) => {
           id="password"
           name="password"
         />
-        <button type="submit" onClick={() => props.onFormSwitch("login")}>
-          Register
-        </button>
+        <button type="submit">Register</button>
       </form>
       <button className="link-btn" onClick={() => props.onFormSwitch("login")}>
         Already have an account? Login here.
